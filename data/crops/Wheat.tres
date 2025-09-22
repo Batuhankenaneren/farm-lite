@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CropData" load_steps=2 format=3 uid="uid://b6847skpcx526"]
+
+[ext_resource type="Script" uid="uid://dtntrbb0srfjb" path="res://data/CropData.gd" id="1_td53h"]
+
+[resource]
+script = ExtResource("1_td53h")
+crop_name = ""
+stages_textures = Array[Texture2D]([])
+stage_hours = Array[int]([])
+need_water_each_day = true
+harvest_yield = 1
+seed_item_id = ""
+sell_price = 5
+metadata/_custom_type_script = "uid://dtntrbb0srfjb"

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://diustjorfwhhb"]
+
+[ext_resource type="Script" uid="uid://bb4bn7vkes5nb" path="res://scenes/world/player.gd" id="1_k1hp7"]
+[ext_resource type="Texture2D" uid="uid://bnof5yjpyh054" path="res://assets/Naruto.svg" id="2_5o24x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvxea"]
+size = Vector2(11.6, 18.2)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_k1hp7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_5o24x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.19209e-06, -5.96046e-08)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_fvxea")
+
+[node name="Camera2D" type="Camera2D" parent="."]
